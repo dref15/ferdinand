@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Information</title>
+    <style>
+        body{
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        }
+        button{
+            font-size: 24px;
+            border: none;
+            padding: 12px 24px;
+            background-color: #1976D2;
+            color: white;
+            border-radius: 8px;
+            display: inline-block;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .special{
+            background-color: rgb(177, 181, 182);
+            border: thin black;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            border: 1px solid black;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgray;
+            font-size: larger;
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(239, 239, 246);
+        }
+        h1, h2{
+            text-align: center;
+            font-size: 24px;
+            color: rgb(54, 54, 56);
+        }
+        nav {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Para may konting pagitan */
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+}
+
+nav button {
+    padding: 10px;
+    font-size: 16px;
+    
+}
+td:nth-child(1) {
+     background-color: #ffcccb; 
+    } 
+td:nth-child(2) {
+     background-color: #ffeb99; 
+    } 
+td:nth-child(3) {
+     background-color: #c1f0c1; 
+    } 
+td:nth-child(4) {
+     background-color: #add8e6; } 
+td:nth-child(5) { background-color: #d8bfd8; 
+    } 
+
+th:nth-child(1) {
+     background-color: #e06666; 
+    } 
+th:nth-child(2) {
+     background-color: #f4d03f; 
+    } 
+th:nth-child(3) {
+     background-color: #58d68d; 
+    } 
+th:nth-child(4) {
+     background-color: #5dade2; 
+    } 
+th:nth-child(5) {
+     background-color: #af7ac5; 
+    } 
+
+    </style>
+</head>
+<body>
+      <!-- Navigation Tabs -->
+       <nav>
+      <p><a href="index.html">
+        <img src="home.png" alt="HOME" width="50" height="50">
+        </a></p>
+      <h2>
+        
+        <button><a href="table1.html">Sports</button>
+        <button><a href="table2.html">Food</a></button>
+        <button disabled class="special">Liquor</button>
+    </h2>
+    </nav>
+    <h1>Liquor</h1>
+    <table>
+        <tr>
+            <th>Liquor</th>
+            <th>Origin</th>
+            <th>Alcohol Content (%)</th>
+            <th>Color</th>
+            <th>Popular Brand</th>
+        </tr>
+        <tr><td>Whiskey</td><td>Scotland/Ireland</td><td>40-50%</td><td>Amber</td><td>Jack Daniel’s</td></tr>
+        <tr><td>Vodka</td><td>Russia/Poland</td><td>35-50%</td><td>Clear</td><td>Smirnoff</td></tr>
+        <tr><td>Rum</td><td>Caribbean</td><td>37-50%</td><td>Brown/Clear</td><td>Bacardi</td></tr>
+        <tr><td>Tequila</td><td>Mexico</td><td>38-55%</td><td>Clear/Gold</td><td>Jose Cuervo</td></tr>
+        <tr><td>Brandy</td><td>France</td><td>35-60%</td><td>Amber</td><td>Hennessy</td></tr>
+        <tr><td>Gin</td><td>England</td><td>35-50%</td><td>Clear</td><td>Bombay Sapphire</td></tr>
+        <tr><td>Bourbon</td><td>USA</td><td>40-50%</td><td>Amber</td><td>Jim Beam</td></tr>
+        <tr><td>Scotch</td><td>Scotland</td><td>40-50%</td><td>Amber</td><td>Johnnie Walker</td></tr>
+        <tr><td>Cognac</td><td>France</td><td>40-50%</td><td>Amber</td><td>Rémy Martin</td></tr>
+        <tr><td>Absinthe</td><td>Switzerland</td><td>45-74%</td><td>Green</td><td>Pernod</td></tr>
+        <tr><td>Sake</td><td>Japan</td><td>13-16%</td><td>Clear</td><td>Gekkeikan</td></tr>
+        <tr><td>Mezcal</td><td>Mexico</td><td>40-55%</td><td>Clear</td><td>Montelobos</td></tr>
+        <tr><td>Moonshine</td><td>USA</td><td>40-100%</td><td>Clear</td><td>Ole Smoky</td></tr>
+        <tr><td>Armagnac</td><td>France</td><td>40-50%</td><td>Amber</td><td>Delord</td></tr>
+        <tr><td>Baijiu</td><td>China</td><td>40-60%</td><td>Clear</td><td>Moutai</td></tr>
+        <tr><td>Soju</td><td>Korea</td><td>16-25%</td><td>Clear</td><td>Jinro</td></tr>
+        <tr><td>Grappa</td><td>Italy</td><td>35-60%</td><td>Clear</td><td>Nardini</td></tr>
+        <tr><td>Ouzo</td><td>Greece</td><td>37-50%</td><td>Clear</td><td>Plomari</td></tr>
+        <tr><td>Rye Whiskey</td><td>USA/Canada</td><td>40-50%</td><td>Amber</td><td>Bulleit</td></tr>
+        <tr><td>Triple Sec</td><td>France</td><td>20-40%</td><td>Clear</td><td>Cointreau</td></tr>
+    </table>        
+</body>
+</html>

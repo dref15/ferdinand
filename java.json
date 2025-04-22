@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class DiscountCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: Ask for the total purchase amount
+        System.out.print("Enter total purchase amount: ");
+        double totalAmount = scanner.nextDouble();
+        double discount = 0;
+
+        // Apply discount based on total amount
+        if (totalAmount >= 5000) {
+            discount = 0.10; // 10% discount for purchases >= 5000
+        } else if (totalAmount >= 2000) {
+            discount = 0.05; // 5% discount for purchases >= 2000
+        }
+
+        // Compute the final amount after discount
+        double discountAmount = totalAmount * discount;
+        double finalAmount = totalAmount - discountAmount;
+
+        // Output: Show results
+        System.out.println("\nOriginal Amount: ₱" + totalAmount);
+        System.out.println("Discount Applied: " + (discount * 100) + "%");
+        System.out.println("Discount Amount: ₱" + discountAmount);
+        System.out.println("Final Amount to Pay: ₱" + finalAmount);
+
+        scanner.close();
+    }
+}

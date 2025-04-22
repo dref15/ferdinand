@@ -1,0 +1,236 @@
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+html, body {
+  padding-top: 60px;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(-45deg, black, cyan, black);
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: gradientAnimation 10s ease infinite;
+  transition: background-color 0.8s ease, background 4s ease;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  padding-top: 60px;
+  background: linear-gradient(to top, black, cyan);
+  background-size: cover;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  z-index: 1000;
+  width: 100%; 
+  background:gray;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: flex;
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+nav ul li a, 
+nav ul li button {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: darkgrey;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.8s, color 0.8s;
+  animation-duration: 3s;
+}
+
+
+nav ul li button {
+  background-color: rgba(15, 219, 219);
+  color: gray;
+}
+
+
+nav ul li a:hover, 
+nav ul li button:hover {
+  background: rgba(15, 219, 219, 0.8);
+  color: black;
+}
+nav ul li button:active {
+  color: inherit; 
+  background: inherit; 
+  font-weight: inherit; 
+}
+
+
+div {
+  background: gray;
+  padding: 20px;
+  padding-bottom: 0px;
+  min-height: 100px;
+}
+
+
+.head {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: azure;
+  margin-top: 200px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
+img {
+  display: block;
+  width: 200px;
+  max-width: 500px;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .head {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 10px 0;
+  }
+}
+.menu {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0px;
+  max-width: 1500px; 
+  margin: 0 auto; 
+  padding: 20px; 
+}
+.homebutton {
+  margin-left: 1px;
+  margin-right: 10%;
+  width: 30px;
+  height: 30px;
+  
+}
+.content {
+  background: transparent;
+  display: flex; 
+  align-items: center; 
+  row-gap: 30px;
+}
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.profession {
+  font-size: 16px;
+  color: rgb(56, 53, 53);
+}
+.profile-text {
+  column-gap: 10px;
+  text-align: center;
+  background: transparent;
+  flex-direction: column;
+}
+.featured {
+  width: 400px;
+  height: 200px;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: darkcyan;
+}
+a {
+  text-decoration: none;
+  color: gray;
+} 
+.activities {
+  border-radius: 0%;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+.set {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px; 
+  border: 1px solid #ccc;
+}
+
+.notinherit {
+  all: unset;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+.heading {
+  margin-right: 10px;
+  font: 500;
+  text-decoration: double;
+}
+.home {
+  color: darkgray;
+}
+
+
+

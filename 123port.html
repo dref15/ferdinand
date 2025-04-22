@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+  <header class="menu">
+    <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#activities">ACTIVITIES</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT & RESUME</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="home-section" id="home">
+    <div class="content">
+      <img src="profilepic.jpg" alt="Profile Picture" class="profile-pic" />
+      <h1 class="profile-name">Ferdinand Caburao Jr.</h1>
+      <p class="profession">Web Developer / Ethical Hacker</p>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Ferdinand Caburao Jr., a passionate tech enthusiast focused on web development and cybersecurity. I aim to build clean, responsive designs and secure applications. This portfolio is my way of sharing my skills and creativity.</p>
+  </section>
+
+  <section class="section" id="activities">
+    <h2>Activities</h2>
+    <p>Add your recent activities below:</p>
+    <label for="activity-title">Activity Title:</label>
+    <input type="text" id="activity-title" placeholder="e.g. Joined Hackathon 2025" />
+
+    <label for="activity-image">Upload Photos:</label>
+    <input type="file" id="activity-image" accept="image/*" multiple />
+  </section>
+
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <label for="project-title">Project Title:</label>
+    <input type="text" id="project-title" placeholder="e.g. Personal Portfolio Website" />
+
+    <label for="project-desc">Project Description:</label>
+    <textarea id="project-desc" rows="4" placeholder="Describe your project..."></textarea>
+
+    <label for="project-image">Upload Project Images:</label>
+    <input type="file" id="project-image" accept="image/*" multiple />
+  </section>
+
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <label for="skill-name">Skill Name:</label>
+    <input type="text" id="skill-name" placeholder="e.g. HTML, CSS, Python" />
+
+    <label for="skill-level">Proficiency Level:</label>
+    <select id="skill-level">
+      <option value="">Select level</option>
+      <option value="Beginner">Beginner</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="Advanced">Advanced</option>
+    </select>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact & Resume</h2>
+    <p>Email: <a href="mailto:ferdinand.caburao@example.com">ferdinand.caburao@example.com</a></p>
+    <p>Phone: +63 912 345 6789</p>
+    <p><a href="resume.pdf" download>📄 Download My Resume</a></p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Ferdinand Caburao Jr. | Built with ❤️</p>
+  </footer>
+
+</body>
+</html>
